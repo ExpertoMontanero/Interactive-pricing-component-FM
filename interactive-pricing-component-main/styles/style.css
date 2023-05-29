@@ -23,7 +23,7 @@ body {
     padding: 0;
     height: 100vh;
     background-color: var(--main-background-color);
-    background-image: url('/images/bg-pattern.svg');
+    background-image: url('../images/bg-pattern.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position-y: -20%;
@@ -46,7 +46,7 @@ body {
 .heading-text-section {
     padding: 3em 0;
     margin-top: -11vh;
-    background-image: url('/images/pattern-circles.svg');
+    background-image: url('../images/pattern-circles.svg');
     background-repeat: no-repeat;
     background-clip: padding-box;
     background-position-x: center;
@@ -144,7 +144,7 @@ body {
     aspect-ratio: 1/1;
     border-radius: 50%;
     opacity: 1;
-    background-image: url('/images/icon-slider.svg');
+    background-image: url('../images/icon-slider.svg');
     background-repeat: no-repeat;
     background-position: 50%;
     background-color: var(--slider-backround-color);
