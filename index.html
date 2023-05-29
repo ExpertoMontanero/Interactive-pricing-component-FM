@@ -28,12 +28,40 @@
           <p id="per-month">/month</p>
         </div>
         <div class="slidecontainer">
-          <input type="range" min="1" max="5" value="3" class="slider" id="mySlider">
+          <input type="range" min="1" max="5" value="3" class="slider" id="mySlider" range="true">
         </div>
       </div>
+      <div class="billing-period-container">
+        <p class="billing-period">Monthly Billing</p>
+        <label class="toggle-switch">
+          <input type="checkbox">
+          <span class="switch"></span>
+        </label>
+        <p class="billing-period">Yearly Billing</p>
+        <p class="discount-info full-discount-text">25% discount</p>
+        <p class="discount-info short-discount-text">-25%</p>
+      </div>
+      <hr>
+      <div class="footer">
+        <div class="benefits">
+          <div class="icon-and-text">
+            <img src="images\icon-check.svg" alt="tick icon">
+            <p class="benefits-text">Unlimited websites</p>
+          </div>
+          <div class="icon-and-text">
+            <img src="images\icon-check.svg" alt="tick icon">
+            <p class="benefits-text">100% data ownership</p>
+          </div>
+          <div class="icon-and-text">
+            <img src="images\icon-check.svg" alt="tick icon">
+            <p class="benefits-text">Email reports</p>
+          </div>
+        </div>
+        <button id="start-trial-btn">Start my trial</button>
       </div>
     </section>
   </main>
+
   <!-- 
   Pageviews
   $ /month
@@ -49,9 +77,9 @@
 
   <!-- jquerry and js links -->
 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="script.js"></script>
-  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
-    crossorigin="anonymous"></script>
 </body>
 
 </html>
