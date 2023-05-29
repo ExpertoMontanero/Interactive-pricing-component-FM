@@ -4,8 +4,8 @@ This is a solution to the [Interactive pricing component](https://www.frontendme
 
 ### Links
 
-- Solution URL: [Add solution URL here]([https://your-solution-url.com](https://www.frontendmentor.io/solutions/jquerry-vanilla-css-flexbox-css-transitions-f7OVspODdL))
-- Live Site URL: [Add live site URL here]([https://your-live-site-url.com](https://expertomontanero.github.io/Interactive-pricing-component-FM/))
+- Solution URL: https://www.frontendmentor.io/solutions/jquerry-vanilla-css-flexbox-css-transitions-f7OVspODdL
+- Live Site URL: https://expertomontanero.github.io/Interactive-pricing-component-FM/
 
 ## Screen shots
 
