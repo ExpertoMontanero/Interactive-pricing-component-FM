@@ -4,129 +4,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <!-- stylesheet -->
-  <link rel="stylesheet" href="styles/style.css">
-  <!-- title -->
-  <title>Frontend Mentor | Time tracking dashboard</title>
 
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <!-- CSS stylesheet link -->
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
+  <main class="content-container">
+    <section class="heading-text-section">
+      <h1 class="upper-header-text">Simple, traffic-based pricing</h1>
+      <h2 class="bottom-header-text">Sign-up for our 30-day trial. No credit card required.</h2>
+    </section>
+    <section class="component-section">
+      <div class="calculating-section">
+        <h2 id="pageviews">100K PAGEVIEWS</h2>
+        <div class="subscription-cost">
+          <h1 id="cost">$16.00</h1>
+          <p id="per-month">/month</p>
+        </div>
+        <div class="slidecontainer">
+          <input type="range" min="1" max="5" value="3" class="slider" id="mySlider">
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+  <!-- 
+  Pageviews
+  $ /month
 
-  <div class="grid">
-    <div id="user-box">
-      <div class="upper-user-box">
-        <div class="user-data-container">
-          <img src="images\image-jeremy.png" id="user-photo" alt="user photo">
-          <div class="user-text">
-            <p id="report-text">Report for</p>
-            <h2 id="user-name">Jeremy Robson</h2>
-          </div>
-        </div>
-      </div>
-      <div class="lower-user-box">
-        <button class="period-selector-btn btn">Daily</button>
-        <button class="period-selector-btn btn">Weekly</button>
-        <button class="period-selector-btn btn">Monthly</button>
-      </div>
-    </div>
-    <div class="box" id="work-container">
-      <img src="images\icon-work.svg" class="icon" alt="work icon">
-      <div class="box-content">
-        <div class="activity-line">
-          <h3 class="activity-name">Work</h3>
-          <img src="images\icon-ellipsis.svg" class="ellipsis-icon" alt="ellipsis icon">
-        </div>
-        <div class="mobile-time-display">
-          <h1 class="time">32hrs</h1>
-          <div class="time-info-line">
-            <p class="previous-time">Last Week- 36hrs</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="box" id="play-container">
-      <img src="images\icon-play.svg" class="icon" alt="work-icon">
-      <div class="box-content">
-        <div class="activity-line">
-          <h3 class="activity-name">Work</h3>
-          <img src="images\icon-ellipsis.svg" class="ellipsis-icon" alt="ellipsis icon">
-        </div>
-        <div class="mobile-time-display">
-          <h1 class="time">32hrs</h1>
-          <div class="time-info-line">
-            <p class="previous-time">Last Week- 36hrs</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="box" id="study-container">
-      <img src="images\icon-study.svg" class="icon" alt="work-icon">
-      <div class="box-content">
-        <div class="activity-line">
-          <h3 class="activity-name">Work</h3>
-          <img src="images\icon-ellipsis.svg" class="ellipsis-icon" alt="ellipsis icon">
-        </div>
-        <div class="mobile-time-display">
-          <h1 class="time">32hrs</h1>
-          <div class="time-info-line">
-            <p class="previous-time">Last Week- 36hrs</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="box" id="exercise-container">
-      <img src="images\icon-exercise.svg" class="icon" alt="work-icon">
-      <div class="box-content">
-        <div class="activity-line">
-          <h3 class="activity-name">Work</h3>
-          <img src="images\icon-ellipsis.svg" class="ellipsis-icon" alt="ellipsis icon">
-        </div>
-        <div class="mobile-time-display">
-          <h1 class="time">32hrs</h1>
-          <div class="time-info-line">
-            <p class="previous-time">Last Week- 36hrs</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="box" id="social-container">
-      <img src="images\icon-social.svg" class="icon" alt="work-icon">
-      <div class="box-content">
-        <div class="activity-line">
-          <h3 class="activity-name">Work</h3>
-          <img src="images\icon-ellipsis.svg" class="ellipsis-icon" alt="ellipsis icon">
-        </div>
-        <div class="mobile-time-display">
-          <h1 class="time">32hrs</h1>
-          <div class="time-info-line">
-            <p class="previous-time">Last Week- 36hrs</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="box" id="self-care-container">
-      <img src="images\icon-self-care.svg" class="icon" alt="work-icon">
-      <div class="box-content">
-        <div class="activity-line">
-          <h3 class="activity-name">Work</h3>
-          <img src="images\icon-ellipsis.svg" class="ellipsis-icon" alt="ellipsis icon">
-        </div>
-        <div class="mobile-time-display">
-          <h1 class="time">32hrs</h1>
-          <div class="time-info-line">
-            <p class="previous-time">Last Week- 36hrs</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  Monthly Billing
+  Yearly Billing 25% discount
 
-  <!-- JS link -->
+  Unlimited websites
+  100% data ownership
+  Email reports
+
+  Start my trial -->
+
+  <!-- jquerry and js links -->
+
   <script src="script.js"></script>
-  
+  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

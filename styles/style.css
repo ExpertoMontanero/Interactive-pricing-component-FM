@@ -1,428 +1,279 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
 
 :root {
-
     /* PRIMARY */
-    --blue: hsl(246, 80%, 60%);
-    --light-red-work: hsl(15, 100%, 70%);
-    --soft-blue-play: hsl(195, 74%, 62%);
-    --light-red-study: hsl(348, 100%, 68%);
-    --lime-green-exercise: hsl(145, 58%, 55%);
-    --violet-social: hsl(264, 64%, 52%);
-    --orange-self-care: hsl(43, 84%, 65%);
-    --white: rgba(254, 254, 254, 0.962);
+    --full-slider-bar-color: hsl(174, 77%, 80%);
+    --slider-backround-color: hsl(174, 86%, 45%);
+    --discount-background-color: hsl(14, 92%, 95%);
+    --discount-text-color: hsl(15, 100%, 70%);
+    --cta-text-color: hsl(226, 100%, 87%);
 
     /* NEUTRAL */
-    --very-dark-blue: hsl(226, 43%, 10%);
-    --dark-blue: hsl(235, 46%, 20%);
-    --desaturated-blue: hsl(235, 45%, 61%);
-    --pale-blue: hsl(236, 100%, 87%);
+    --main-background-color: hsl(230, 100%, 99%);
+    --pricing-component-background-color: hsl(0, 0%, 100%);
+    --empty-slider-bar-color: hsl(224, 65%, 95%);
+    --toggle-background-color: hsl(223, 50%, 87%);
+    --text-color: hsl(225, 20%, 60%);
+    --text-cta-background-color: hsl(227, 35%, 25%);
+
 }
 
 
-
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
+body {
     margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: var(--main-background-color);
+    background-image: url('/images/bg-pattern.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: -20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Manrope', sans-serif;
 }
 
-/* Set core root defaults */
-html:focus-within {
-    scroll-behavior: smooth;
+/* MAIN CONTENT CONATAINER SECTION */
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
 }
 
-/* Set core body defaults */
-body {
-    min-height: 100vh;
-    text-rendering: optimizeSpeed;
-    font-family: 'Rubik', 'Sans-serif';
+/* ABOVE PRICING COMPONENT TEXT SECTION */
+.heading-text-section {
+    padding: 3em 0;
+    margin-top: -10vh;
+    background-image: url('/images/pattern-circles.svg');
+    background-repeat: no-repeat;
+    background-clip: padding-box;
+    background-position-x: center;
+    background-position-y: 50%;
 }
 
-/* Make images easier to work with */
-img,
-picture {
-    max-width: 100%;
-    display: block;
+.upper-header-text {
+    font-size: 2em;
+    font-weight: 800;
+    line-height: 0.5;
+    color: var(--text-cta-background-color);
 }
 
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-    font: inherit;
+.bottom-header-text {
+    font-size: 1em;
+    font-weight: 600;
+    color: var(--text-color);
 }
 
-/* Positioning */
-body {
-    background-color: var(--very-dark-blue);
+/* COMPONENT SECTION */
+.component-section {
     display: flex;
     justify-content: center;
-}
-
-/* content positioning with grid system  */
-.grid {
-    margin: auto;
-    height: 35em;
-    width: 70em;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr;
-    gap: 1.5em;
-}
-
-/* single box of content */
-.box {
-    aspect-ratio: 1/1;
-    height: 100%;
-}
-
-/* user box of content (taking 2 grid rows) */
-#user-box {
-    height: 100%;
-    aspect-ratio: 1/2.1;
-    grid-row: span 2;
-}
-
-/* BOXES CUSTOMIZATION */
-
-/* USER BOX CUSTOMIZATION */
-#user-box {
-    background-color: var(--dark-blue);
-    align-items: start;
-    border-radius: 1em;
-}
-
-/* User data section */
-.upper-user-box {
-    display: flex;
-    justify-content: center;
-    height: 70%;
-    width: 100%;
-    border-radius: 1em;
-    background-color: var(--blue);
-}
-
-/* blue user data container with photo and name */
-.user-data-container {
-    width: 83%;
-    height: 10em;
+    align-items: center;
+    flex-direction: column;
+    padding: 4em 3em;
     margin-top: 3em;
+    width: 35em;
+    aspect-ratio: 16/9;
+    border-radius: 0.8em;
+    background-color: var(--pricing-component-background-color);
+    -webkit-box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
 }
 
-/* user avatar */
-#user-photo {
-    width: 5em;
-    border: solid;
-    border-radius: 50%;
-    border-color: var(--white);
-}
-
-/* tex above user name */
-#report-text {
-    margin-top: 3em;
-    font-size: 15px;
-    color: var(--pale-blue);
-}
-
-/* user name */
-#user-name {
-    font-size: 2.5em;
-    font-weight: 300;
-    letter-spacing: 1px;
-    color: var(--white);
-}
-
-/* time span picking section */
-.lower-user-box {
-    margin-left: 1em;
-    width: 50%;
-    display: inline-block;
-}
-
-/* button for picking time span */
-.period-selector-btn {
-    text-align: start;
-    width: 100%;
-    font-size: 1.1em;
-    margin-top: 1.3em;
-    background-color: transparent;
-    border: none;
-    font-weight: 300;
-    color: var(--pale-blue);
-}
-
-/* active states */
-.period-selector-btn:hover,
-:focus {
-    color: var(--white);
-}
-
-
-/* COMMON BOXES CUSTOMIZATION */
-.box-content {
-    z-index: 1;
-    border-radius: 1em;
-    width: 100%;
-    height: 81%;
-    background-color: var(--dark-blue);
-    padding: 1.7em;
-}
-
-/* box customization */
-.box {
+.subscription-cost {
     display: flex;
-    align-items: end;
-    position: relative;
-    border-radius: 1em;
-    overflow: auto;
+    align-items: center;
+    flex-direction: row;
 }
 
-/* individual containers */
-#work-container {
-    background-color: var(--light-red-work);
-}
-
-#play-container {
-    background-color: var(--soft-blue-play);
-}
-
-#study-container {
-    background-color: var(--light-red-study);
-}
-
-#exercise-container {
-    background-color: var(--lime-green-exercise);
-}
-
-#social-container {
-    background-color: var(--violet-social);
-}
-
-#self-care-container {
-    background-color: var(--orange-self-care);
-}
-
-/* individual icon for every box (on the right corner) */
-.icon {
-    height: auto;
-    position: absolute;
-    right: 5%;
-    top: -0.6em;
-}
-
-/* name of acitvity and icon line */
-.activity-line {
+/* calculating section */
+.calculating-section {
     display: flex;
+    width: 100%;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
 }
 
-/* name of activity */
-.activity-name {
-    font-size: 1.4em;
-    color: var(--white);
-    font-weight: 400;
+/* calculating section text-editing */
+/* pageviews */
+#pageviews {
+    font-size: 1em;
+    letter-spacing: 2px;
+    color: var(--text-color);
 }
 
-/* 3 dot icon next to activity name */
-.ellipsis-icon {
-    width: 21px;
-    height: 5px;
+/* cost text*/
+#cost {
+    margin-right: 0.2em;
+    font-size: 2.5em;
+    color: var(--text-cta-background-color);
 }
 
-/* time display */
-.time {
-    margin-top: 0.3em;
-    font-size: 4em;
-    font-weight: 300;
-    color: var(--white);
+#per-month {
+    color: var(--text-color);
 }
 
-.time-info-line {
-    margin-top: 0.4em;
-    font-weight: 300;
-    color: var(--pale-blue);
+/* SLIDER */
+.slidecontainer {
+    min-width: 100%;
 }
 
-/* MEDIA TABLET */
-@media(max-width:1150px) {
-    .grid {
-        margin: unset;
-        height: unset;
-        grid-template-columns: unset;
-        grid-template-rows: unset;
-        gap: unset;
-        display: initial;
-        width: 80vw;
-        height: fit-content;
-        margin-top: 5em;
-    }
-
-    .box {
-        margin-top: 2em;
-        aspect-ratio: 1.8/1;
-    }
-
-    #user-box {
-        aspect-ratio: 1.4/1;
-        grid-row: span 1;
-    }
-
-    .box-content {
-        height: 75%;
-    }
-
-    .upper-user-box {
-        display: flex;
-        align-items: center;
-        justify-content: initial;
-        height: 65%;
-        width: 100%;
-        border-radius: 1em;
-        background-color: var(--blue);
-    }
-
-    .user-data-container {
-        display: flex;
-        align-items: center;
-        width: 83%;
-        height: 100%;
-        margin: 0 auto;
-    }
-
-    #user-photo {
-        width: clamp(4.5em, 20%, 12em);
-        border: solid;
-        border-radius: 50%;
-        border-color: var(--white);
-    }
-
-    .user-text {
-        margin-bottom: 3em;
-        display: inline-block;
-        justify-content: start;
-        align-items: center;
-        margin-left: clamp(1.5em, 6%, 12em);
-    }
-
-    #report-text {
-        margin-top: clamp(2.5em, 1em, 5em);
-        font-size: clamp(1.2em, 4vw, 2.8em);
-        color: var(--pale-blue);
-    }
-
-    #user-name {
-        font-size: clamp(1.7em, 4vw, 3.5em);
-        font-weight: 300;
-        letter-spacing: 1px;
-        color: var(--white);
-    }
-
-    .lower-user-box {
-        align-items: center;
-        display: flex;
-        justify-content: space-around;
-        margin: 0;
-        aspect-ratio: 3.9/1;
-        width: 100%;
-        font-size: clamp(1em, 3.5vw, 2em);
-    }
-
-    .period-selector-btn {
-        text-align: center;
-        margin: 0;
-    }
-
-    .activity-line {
-        margin-top: -0.8em;
-    }
-
-    .activity-name {
-        font-size: 4.5vw;
-    }
-
-    .time {
-        margin-top: 0;
-        font-size: 10vw;
-        font-weight: 300;
-        color: var(--white);
-    }
-
-    .time-info-line {
-        display: flex;
-        align-items: center;
-        font-size: 3.5vw;
-    }
-
-    .mobile-time-display {
-        margin-top: 3em;
-        display: flex;
-        justify-content: space-between;
-        text-align: center;
-    }
+#mySlider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 12px;
+    border: none;
+    outline: none;
+    border-radius: 1em;
+    background: var(--full-slider-bar-color);
 }
 
-/* MEDIA MOBILE*/
-@media(max-width:600px) {
+#mySlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 35px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    opacity: 1;
+    background-image: url('/images/icon-slider.svg');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-color: var(--slider-backround-color);
+    cursor: pointer;
+    -webkit-box-shadow: 0px 10px 38px 1px rgba(16, 213, 194, 1);
+    -moz-box-shadow: 0px 10px 38px 1px rgba(16, 213, 194, 1);
+    box-shadow: 0px 10px 38px 1px rgba(16, 213, 194, 1);
+}
+
+#mySlider::-webkit-slider-thumb:hover {
+    background-color: hsl(174, 85%, 37%);
+}
+
+/* MEDIA QUERRIES */
+
+@media(max-width:800px) {
     body {
-        justify-content: start;
+        background-size: auto;
     }
 
-    .grid {
-        margin: 3em auto;
+    .upper-header-text {
+        font-size: 1.6em;
+    }
+
+    .bottom-header-text {
+        font-size: 0.8em;
+    }
+
+    .content-container {
+        height: 90vh;
+    }
+
+    .component-section {
+        padding: 4em 1em;
         width: 80vw;
-    }
-
-    .box {
-        aspect-ratio: 2.3/1;
+        aspect-ratio: 3/4;
         margin-top: 1.5em;
     }
 
-    #user-box {
-        aspect-ratio: 1.7/1;
-    }
-
-    #report-text {
-        margin-top: 3.4em;
+    #pageviews {
         font-size: 1em;
+        letter-spacing: 2px;
+        margin-bottom: 2em;
     }
 
-    #user-name {
-        font-size: 1.3em;
+    #cost {
+        font-size: 2.5em;
     }
-    .mobile-time-display {
-        margin-top: 1em;
-        display: flex;
-        justify-content: space-between;
-        text-align: center;
+
+    #per-month {
+        font-size: 1.2em;
+    }
+
+    .calculating-section {
+        justify-content: center;
+    }
+
+    .subscription-cost {
+        order: 3;
+    }
+
+    .slidecontainer {
+        order: 2;
+    }
+
+    #mySlider {
+        height: 8px;
+    }
+
+    #mySlider::-webkit-slider-thumb {
+        width: 45px;
     }
 }
 
 @media(max-width:400px) {
+    .upper-header-text {
+        font-size: 1.3em;
+    }
 
-    #report-text {
-        margin-top: 3.2em;
+    .bottom-header-text {
+        font-size: 0.7em;
+    }
+
+    .component-section {
+        margin-top: 1em;
+    }
+
+    #pageviews {
+        font-size: 0.9em;
+        letter-spacing: 1.5px;
+    }
+
+    #cost {
+        font-size: 2.2em;
+    }
+
+    #per-month {
         font-size: 1em;
     }
 
-    #user-name {
-        font-size: 1.2em;
+    #mySlider::-webkit-slider-thumb {
+        width: 40px;
+    }
+}
+
+@media(max-width:300px) {
+    .upper-header-text {
+        font-size: 1.1em;
+    }
+
+    .bottom-header-text {
+        font-size: 0.6em;
+    }
+
+    .component-section {
+        margin-top: 0;
+    }
+
+    #pageviews {
+        font-size: 0.75em;
+    }
+
+    #cost {
+        font-size: 1.8em;
+    }
+
+    #per-month {
+        font-size: 0.9em;
+    }
+
+    #mySlider::-webkit-slider-thumb {
+        width: 35px;
     }
 }
