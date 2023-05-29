@@ -1,39 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive pricing component</title>
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="styles/style.css">
+  <!-- title -->
+  <title>Frontend Mentor | Time tracking dashboard</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
 
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
-
-  Pageviews
-  $ /month
-
-  Monthly Billing
-  Yearly Billing 25% discount
-
-  Unlimited websites
-  100% data ownership
-  Email reports
-
-  Start my trial
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="grid">
+    <div id="user-box">
+      <div class="upper-user-box">
+        <div class="user-data-container">
+          <img src="images\image-jeremy.png" id="user-photo" alt="user photo">
+          <div class="user-text">
+            <p id="report-text">Report for</p>
+            <h2 id="user-name">Jeremy Robson</h2>
+          </div>
+        </div>
+      </div>
+      <div class="lower-user-box">
+        <button class="period-selector-btn btn">Daily</button>
+        <button class="period-selector-btn btn">Weekly</button>
+        <button class="period-selector-btn btn">Monthly</button>
+      </div>
+    </div>
+    <div class="box" id="work-container">
+      <img src="images\icon-work.svg" class="icon" alt="work icon">
+      <div class="box-content">
+        <div class="activity-line">
+          <h3 class="activity-name">Work</h3>
+          <img src="images\icon-ellipsis.svg" class="ellipsis-icon" alt="ellipsis icon">
+        </div>
+        <div class="mobile-time-display">
+          <h1 class="time">32hrs</h1>
+          <div class="time-info-line">
+            <p class="previous-time">Last Week- 36hrs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box" id="play-container">
+      <img src="images\icon-play.svg" class="icon" alt="work-icon">
+      <div class="box-content">
+        <div class="activity-line">
+          <h3 class="activity-name">Work</h3>
+          <img src="images\icon-ellipsis.svg" class="ellipsis-icon" alt="ellipsis icon">
+        </div>
+        <div class="mobile-time-display">
+          <h1 class="time">32hrs</h1>
+          <div class="time-info-line">
+            <p class="previous-time">Last Week- 36hrs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box" id="study-container">
+      <img src="images\icon-study.svg" class="icon" alt="work-icon">
+      <div class="box-content">
+        <div class="activity-line">
+          <h3 class="activity-name">Work</h3>
+          <img src="images\icon-ellipsis.svg" class="ellipsis-icon" alt="ellipsis icon">
+        </div>
+        <div class="mobile-time-display">
+          <h1 class="time">32hrs</h1>
+          <div class="time-info-line">
+            <p class="previous-time">Last Week- 36hrs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box" id="exercise-container">
+      <img src="images\icon-exercise.svg" class="icon" alt="work-icon">
+      <div class="box-content">
+        <div class="activity-line">
+          <h3 class="activity-name">Work</h3>
+          <img src="images\icon-ellipsis.svg" class="ellipsis-icon" alt="ellipsis icon">
+        </div>
+        <div class="mobile-time-display">
+          <h1 class="time">32hrs</h1>
+          <div class="time-info-line">
+            <p class="previous-time">Last Week- 36hrs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box" id="social-container">
+      <img src="images\icon-social.svg" class="icon" alt="work-icon">
+      <div class="box-content">
+        <div class="activity-line">
+          <h3 class="activity-name">Work</h3>
+          <img src="images\icon-ellipsis.svg" class="ellipsis-icon" alt="ellipsis icon">
+        </div>
+        <div class="mobile-time-display">
+          <h1 class="time">32hrs</h1>
+          <div class="time-info-line">
+            <p class="previous-time">Last Week- 36hrs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box" id="self-care-container">
+      <img src="images\icon-self-care.svg" class="icon" alt="work-icon">
+      <div class="box-content">
+        <div class="activity-line">
+          <h3 class="activity-name">Work</h3>
+          <img src="images\icon-ellipsis.svg" class="ellipsis-icon" alt="ellipsis icon">
+        </div>
+        <div class="mobile-time-display">
+          <h1 class="time">32hrs</h1>
+          <div class="time-info-line">
+            <p class="previous-time">Last Week- 36hrs</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <!-- JS link -->
+  <script src="script.js"></script>
+  
 </body>
+
 </html>
